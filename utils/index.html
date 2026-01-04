@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bekir Ahmetli - Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <!-- Logo Removed -->
+                <span>Bekir Ahmetli</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active" data-i18n="nav.home">Ana Sayfa</a></li>
+                <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+                <li><a href="#articles" data-i18n="nav.articles">Makaleler</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+            </ul>
+            <div class="nav-utils">
+
+                <div class="lang-switcher">
+                    <a href="#" class="lang-btn active" data-lang="tr"
+                        onclick="changeLanguage('tr'); return false;">TR</a>
+                    <a href="#" class="lang-btn" data-lang="en" onclick="changeLanguage('en'); return false;">EN</a>
+                </div>
+                <a href="#contact" class="btn-hire" data-i18n="nav.hireMe">Bana Ulaşın</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left reveal">
+                    <p class="hero-greeting">👋 <span data-i18n="hero.greeting">Merhaba, Ben</span></p>
+                    <h1 class="hero-name">Bekir Ahmetli</h1>
+                    <h2 class="hero-role" data-i18n="hero.role">Android & Java Developer</h2>
+                    <p class="hero-description" data-i18n="hero.description">Android ve backend teknolojileri ile
+                        ölçeklenebilir uygulamalar geliştiriyorum.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary" data-i18n="hero.viewProjects">Projeleri Görüntüle →</a>
+                        <a href="#contact" class="btn-secondary" data-i18n="hero.contactMe">İletişime Geç</a>
+                    </div>
+                </div>
+                <div class="hero-right reveal reveal-delay-1">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">Developer</span> {
+  <span class="keyword">private</span> <span class="type">String</span> name = <span class="string">"Bekir"</span>;
+  <span class="keyword">private</span> <span class="type">String</span> role = <span class="string">"Android & Java Developer"</span>;
+
+  <span class="keyword">public</span> <span class="type">void</span> <span class="method">code</span>() {
+    <span class="keyword">while</span> (<span class="keyword">true</span>) {
+      <span class="method">learn</span>();
+      <span class="method">build</span>();
+      <span class="method">improve</span>();
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <p class="section-label" data-i18n="about.label">// HAKKIMDA</p>
+            <h2 class="section-title" data-i18n="about.title">Kod Yazan, Çözüm Üreten</h2>
+            <div class="about-content reveal">
+                <div class="about-left">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="info-icon">👤</span>
+                            <div>
+                                <span class="info-label" data-i18n="about.name">İsim</span>
+                                <span class="info-value">Bekir Ahmetli</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">&lt;/&gt;</span>
+                            <div>
+                                <span class="info-label" data-i18n="about.role">Rol</span>
+                                <span class="info-value" data-i18n="about.roleValue">Java & Android Developer</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <span class="info-label" data-i18n="about.location">Konum</span>
+                                <span class="info-value" data-i18n="about.locationValue">Türkiye</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/bekirahmetli" target="_blank" class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/bekirahmetli" target="_blank" class="social-icon">in</a>
+                            <a href="mailto:ahmetlibekir20@gmail.com" class="social-icon">📧</a>
+                            <a href="https://medium.com/@bekirahmetli" target="_blank" class="social-icon">M</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <p data-i18n="about.paragraph1">Yazılım geliştirmeye olan tutkumla, modern teknolojileri kullanarak
+                        kullanıcı dostu ve verimli uygulamalar oluşturuyorum. Android ve Java teknolojilerinde deneyim
+                        sahibiyim.</p>
+                    <p data-i18n="about.paragraph2">Gerçek projelerde edindiğim tecrübelerle, karmaşık problemlere basit
+                        ve etkili çözümler sunuyorum. Her projede kullanıcı deneyimini ön planda tutarak, performans ve
+                        kalite odaklı çalışıyorum.</p>
+                    <p data-i18n="about.paragraph3">Temiz kod yazma prensipleri ve en iyi uygulamaları benimseyerek,
+                        sürdürülebilir ve ölçeklenebilir yazılımlar geliştirmeyi hedefliyorum.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>5+</h3>
+                            <p data-i18n="about.yearsExp">Makale</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>20+</h3>
+                            <p data-i18n="about.completedProjects">Tamamlanan Proje</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p data-i18n="about.technologies">Teknoloji</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <p class="section-label" data-i18n="skills.label">// YETENEKLERİM</p>
+            <h2 class="section-title" data-i18n="skills.title">Teknoloji Yığını</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">Modern teknolojiler ve araçlarla çalışıyorum</p>
+            <div class="skills-grid">
+                <!-- 1. Android SDK -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">📱</div>
+                    <h3 data-i18n="skills.android.title">Android SDK</h3>
+                    <span class="skill-tag" data-i18n="skills.android.tag">Mobile</span>
+                </div>
+                <!-- 2. Jetpack Compose -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🎨</div>
+                    <h3 data-i18n="skills.compose.title">Jetpack Compose</h3>
+                    <span class="skill-tag" data-i18n="skills.compose.tag">UI Toolkit</span>
+                </div>
+                <!-- 3. Firebase -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔥</div>
+                    <h3 data-i18n="skills.firebase.title">Firebase</h3>
+                    <span class="skill-tag" data-i18n="skills.firebase.tag">Cloud</span>
+                </div>
+                <!-- 4. Spring Boot -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🍃</div>
+                    <h3 data-i18n="skills.springboot.title">Spring Boot</h3>
+                    <span class="skill-tag" data-i18n="skills.springboot.tag">Backend</span>
+                </div>
+                <!-- 5. Spring Security -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔒</div>
+                    <h3 data-i18n="skills.security.title">Spring Security</h3>
+                    <span class="skill-tag" data-i18n="skills.security.tag">Security</span>
+                </div>
+                <!-- 6. Spring Data JPA -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">💾</div>
+                    <h3 data-i18n="skills.jpa.title">Spring Data JPA</h3>
+                    <span class="skill-tag" data-i18n="skills.jpa.tag">ORM</span>
+                </div>
+                <!-- 7. Hibernate -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">📦</div>
+                    <h3 data-i18n="skills.hibernate.title">Hibernate</h3>
+                    <span class="skill-tag" data-i18n="skills.hibernate.tag">ORM</span>
+                </div>
+                <!-- 8. JDBC -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔌</div>
+                    <h3 data-i18n="skills.jdbc.title">JDBC</h3>
+                    <span class="skill-tag" data-i18n="skills.jdbc.tag">Database</span>
+                </div>
+                <!-- 9. PostgreSQL -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🐘</div>
+                    <h3 data-i18n="skills.postgres.title">PostgreSQL</h3>
+                    <span class="skill-tag" data-i18n="skills.postgres.tag">Database</span>
+                </div>
+                <!-- 10. RESTful APIs -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🌐</div>
+                    <h3 data-i18n="skills.rest.title">RESTful APIs</h3>
+                    <span class="skill-tag" data-i18n="skills.rest.tag">API</span>
+                </div>
+                <!-- 11. Docker -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🐳</div>
+                    <h3 data-i18n="skills.docker.title">Docker</h3>
+                    <span class="skill-tag" data-i18n="skills.docker.tag">DevOps</span>
+                </div>
+                <!-- 12. Git -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🎋</div>
+                    <h3 data-i18n="skills.git.title">Git</h3>
+                    <span class="skill-tag" data-i18n="skills.git.tag">Version Control</span>
+                </div>
+                <!-- 13. GitHub -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🐙</div>
+                    <h3 data-i18n="skills.github.title">GitHub</h3>
+                    <span class="skill-tag" data-i18n="skills.github.tag">Platform</span>
+                </div>
+                <!-- 14. Postman -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🚀</div>
+                    <h3 data-i18n="skills.postman.title">Postman</h3>
+                    <span class="skill-tag" data-i18n="skills.postman.tag">Tool</span>
+                </div>
+                <!-- 15. Swagger -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">📄</div>
+                    <h3 data-i18n="skills.swagger.title">Swagger</h3>
+                    <span class="skill-tag" data-i18n="skills.swagger.tag">Documentation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <p class="section-label" data-i18n="projects.label">// PROJELER</p>
+                    <h2 class="section-title" data-i18n="projects.title">Uygulamalarım</h2>
+                </div>
+                <a href="https://github.com/bekirahmetli" target="_blank" class="view-all"
+                    data-i18n="projects.viewAll">Tümünü Görüntüle →</a>
+            </div>
+            <div class="projects-grid">
+                <!-- 7. EventHubRestAPI -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="EventHubRestAPI">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project7.title">EventHubRestAPI</h3>
+                        <p data-i18n="projects.project7.desc">Comprehensive Event Management REST API with JWT, OAuth2
+                            (GitHub, Google), refresh token, and full CRUD operations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">OAuth2</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/EventHubRestAPI" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 1. EcommerceRestAPI -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="EcommerceRestAPI">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project1.title">EcommerceRestAPI</h3>
+                        <p data-i18n="projects.project1.desc">REST API with full CRUD operations and advanced JWT
+                            authentication. Secure and layered backend.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java 21</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/EcommerceRestAPI" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 2. VeterinaryClinicRESTAPI -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="VeterinaryClinicRESTAPI">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project2.title">VeterinaryClinicRESTAPI</h3>
+                        <p data-i18n="projects.project2.desc">REST API for managing doctors, customers, animals.
+                            Includes validation and business rules.</p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">JPA</span>
+                            <span class="tag">Lombok</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/VeterinaryClinicRESTAPI" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 3. JPA_Library_System -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="JPA_Library_System">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project3.title">JPA_Library_System</h3>
+                        <p data-i18n="projects.project3.desc">A simple library management system handling books,
+                            authors, categories, publishers.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java 21</span>
+                            <span class="tag">JPA</span>
+                            <span class="tag">Hibernate</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/JPA_Library_System" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 4. Rent-A-Car -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="Rent-A-Car">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project4.title">Rent-A-Car</h3>
+                        <p data-i18n="projects.project4.desc">Terminal-based car rental application featuring
+                            authentication and role-based access control.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java 21</span>
+                            <span class="tag">JDBC</span>
+                            <span class="tag">Layered Arch</span>
+                            <span class="tag">Console</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/Rent-A-Car" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 5. FoticaApp -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="FoticaApp">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project5.title">FoticaApp</h3>
+                        <p data-i18n="projects.project5.desc">A modern mobile social media app where users can share
+                            photos, comment, like, and follow others.</p>
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Social</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/FoticaApp" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- 6. FoodOrdering -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="code.png" alt="FoodOrdering">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="projects.project6.title">FoodOrdering</h3>
+                        <p data-i18n="projects.project6.desc">Kotlin-based food ordering app featuring home, favorites,
+                            cart, and food detail screens.</p>
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">MVVM</span>
+                            <span class="tag">Retrofit</span>
+                            <span class="tag">Navigation</span>
+                        </div>
+                        <a href="https://github.com/bekirahmetli/FoodOrdering" target="_blank"
+                            class="btn-github">GitHub</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <p class="section-label" data-i18n="articles.label">// MAKALELER</p>
+            <h2 class="section-title" data-i18n="articles.title">Yazılarım</h2>
+            <p class="section-subtitle" data-i18n="articles.subtitle">Teknoloji ve yazılım geliştirme üzerine
+                makalelerim</p>
+            <div class="articles-grid">
+                <!-- Article 1: Exception Handling (30 Aralık 2025) -->
+                <div class="article-card reveal">
+                    <div class="article-header">
+                        <div class="article-icon">⚠️</div>
+                        <span class="article-date" data-i18n="articles.article1.date">30 Aralık 2025</span>
+                    </div>
+                    <h3 data-i18n="articles.article1.title">Java'da Exception Handling: En Sık Yapılan Hatalar</h3>
+                    <p data-i18n="articles.article1.desc">Java projelerinde exception yönetiminin yaygın hataları,
+                        checked vs unchecked exception, katmanlı mimaride akış ve best practices.</p>
+                    <div class="article-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Exception</span>
+                        <span class="tag">Best Practices</span>
+                    </div>
+                    <a href="https://medium.com/@bekirahmetli/javada-exception-handling-en-s%C4%B1k-yap%C4%B1lan-hatalar-72cee51a9b3f"
+                        target="_blank" class="btn-read-article" data-i18n="articles.readMore">Makaleyi Oku →</a>
+                </div>
+
+                <!-- Article 2: equals ve hashCode (18 Aralık 2025) -->
+                <div class="article-card reveal">
+                    <div class="article-header">
+                        <div class="article-icon">🔍</div>
+                        <span class="article-date" data-i18n="articles.article2.date">18 Aralık 2025</span>
+                    </div>
+                    <h3 data-i18n="articles.article2.title">Java'da equals ve hashCode Yazmanın Gizli Kuralları</h3>
+                    <p data-i18n="articles.article2.desc">Contract kuralları, Lombok kullanımı, Hibernate entity'lerinde
+                        dikkat edilmesi gerekenler ve Set/Map'lerdeki gizli sorunlar.</p>
+                    <div class="article-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">equals</span>
+                        <span class="tag">Hibernate</span>
+                    </div>
+                    <a href="https://medium.com/@bekirahmetli/javada-equals-ve-hashcode-yazman%C4%B1n-gizli-kurallar%C4%B1-2b7d457332bf"
+                        target="_blank" class="btn-read-article" data-i18n="articles.readMore">Makaleyi Oku →</a>
+                </div>
+
+                <!-- Article 3: Stream API (26 Kasım 2025) -->
+                <div class="article-card reveal">
+                    <div class="article-header">
+                        <div class="article-icon">⚡</div>
+                        <span class="article-date" data-i18n="articles.article3.date">26 Kasım 2025</span>
+                    </div>
+                    <h3 data-i18n="articles.article3.title">Java Stream API'de Performans İpuçları</h3>
+                    <p data-i18n="articles.article3.desc">Paralel stream kullanımı, boxing maliyeti, filter
+                        optimizasyonu ve büyük veri setlerinde dikkat edilmesi gereken tuzaklar.</p>
+                    <div class="article-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Stream API</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                    <a href="https://medium.com/@bekirahmetli/java-stream-apide-performans-i%CC%87pu%C3%A7lar%C4%B1-75faeaf71ed5"
+                        target="_blank" class="btn-read-article" data-i18n="articles.readMore">Makaleyi Oku →</a>
+                </div>
+
+                <!-- Article 4: Optional (11 Kasım 2025) -->
+                <div class="article-card reveal">
+                    <div class="article-header">
+                        <div class="article-icon">🎯</div>
+                        <span class="article-date" data-i18n="articles.article4.date">11 Kasım 2025</span>
+                    </div>
+                    <h3 data-i18n="articles.article4.title">Optional Sınıfını Doğru Kullanmak</h3>
+                    <p data-i18n="articles.article4.desc">NullPointerException'a veda etmenin yolları. Optional'ın doğru
+                        kullanımı, yapılması ve yapılmaması gerekenler.</p>
+                    <div class="article-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Optional</span>
+                        <span class="tag">null Safety</span>
+                    </div>
+                    <a href="https://medium.com/@bekirahmetli/optional-s%C4%B1n%C4%B1f%C4%B1n%C4%B1-do%C4%9Fru-kullanmak-nullpointerexceptiona-veda-etmenin-yollar%C4%B1-ff0e655ad341"
+                        target="_blank" class="btn-read-article" data-i18n="articles.readMore">Makaleyi Oku →</a>
+                </div>
+
+                <!-- Article 5: Jetpack Compose (26 Ağustos 2025) -->
+                <div class="article-card reveal">
+                    <div class="article-header">
+                        <div class="article-icon">🎨</div>
+                        <span class="article-date" data-i18n="articles.article5.date">26 Ağustos 2025</span>
+                    </div>
+                    <h3 data-i18n="articles.article5.title">What is Jetpack Compose?</h3>
+                    <p data-i18n="articles.article5.desc">Modern Android UI geliştirme. Declarative UI, state
+                        management, animasyonlar ve performans ipuçları.</p>
+                    <div class="article-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Jetpack Compose</span>
+                        <span class="tag">UI</span>
+                    </div>
+                    <a href="https://medium.com/@bekirahmetli/what-is-jetpack-compose-modern-android-ui-development-f1923c1a9454"
+                        target="_blank" class="btn-read-article" data-i18n="articles.readMore">Makaleyi Oku →</a>
+                </div>
+
+                <!-- Article 6: WorkManager (11 Mayıs 2025) -->
+                <div class="article-card reveal">
+                    <div class="article-header">
+                        <div class="article-icon">🔧</div>
+                        <span class="article-date" data-i18n="articles.article6.date">11 Mayıs 2025</span>
+                    </div>
+                    <h3 data-i18n="articles.article6.title">Android'de WorkManager</h3>
+                    <p data-i18n="articles.article6.desc">Arka plan işlerini yönetmenin güçlü yolu. WorkManager ile
+                        esnek zamanlama, güvenilirlik ve enerji verimliliği.</p>
+                    <div class="article-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">WorkManager</span>
+                        <span class="tag">Background</span>
+                    </div>
+                    <a href="https://medium.com/@bekirahmetli/androidde-workmanager-arka-plan-i%CC%87%C5%9Flerini-y%C3%B6netmenin-g%C3%BC%C3%A7l%C3%BC-yolu-f7747f944e7f"
+                        target="_blank" class="btn-read-article" data-i18n="articles.readMore">Makaleyi Oku →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <p class="section-label" data-i18n="contact.label">// İLETİŞİM</p>
+            <h2 class="section-title" data-i18n="contact.title">Birlikte Çalışalım</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Projeleriniz için benimle iletişime geçin</p>
+            <div class="contact-content reveal">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3 data-i18n="contact.email">Email</h3>
+                        <p>ahmetlibekir20@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 data-i18n="contact.location">Konum</h3>
+                        <p data-i18n="contact.locationValue">Türkiye</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">⏰</div>
+                        <h3 data-i18n="contact.status">Durum</h3>
+                        <p data-i18n="contact.statusValue">Yeni projeler için müsait</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" data-i18n="contact.formName" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" data-i18n="contact.formEmail" placeholder="Email Adresiniz"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" data-i18n="contact.formMessage" placeholder="Mesajınız" rows="5"
+                                maxlength="500" required></textarea>
+                            <span class="char-count">0/500</span>
+                        </div>
+                        <button type="submit" class="btn-send">
+                            <span data-i18n="contact.sendBtn">Mesaj Gönder</span>
+                            <span>✈️</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://github.com/bekirahmetli" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/bekirahmetli" target="_blank" class="social-icon">in</a>
+                <a href="mailto:ahmetlibekir20@gmail.com" class="social-icon">📧</a>
+                <a href="https://medium.com/@bekirahmetli" target="_blank" class="social-icon">M</a>
+            </div>
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2024 Bekir Ahmetli. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
