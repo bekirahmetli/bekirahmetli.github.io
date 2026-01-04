@@ -37,14 +37,3 @@ Welcome to the personal portfolio website of **Bekir Ahmetli**. This project sho
 1.  Clone the repository.
 2.  Navigate to the project directory.
 3.  Open `utils/index.html` in your preferred web browser.
-
-## 📬 Contact
-
-- **Name**: Bekir Ahmetli
-- **Email**: ahmetlibekir20@gmail.com
-- **LinkedIn**: [bekirahmetli](https://linkedin.com/in/bekirahmetli)
-- **GitHub**: [bekirahmetli](https://github.com/bekirahmetli)
-- **Medium**: [@bekirahmetli](https://medium.com/@bekirahmetli)
-
----
-© 2026 Bekir Ahmetli. All rights reserved.
