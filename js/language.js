@@ -13,8 +13,8 @@ const translations = {
         hero: {
             greeting: "Merhaba, Ben",
             name: "Bekir Ahmetli",
-            role: "Android & Java Developer",
-            description: "Android ve backend teknolojileri ile ölçeklenebilir uygulamalar geliştiriyorum.",
+            role: "Java Full Stack Developer",
+            description: "Modern web ve backend teknolojileri ile ölçeklenebilir uygulamalar geliştiriyorum.",
             viewProjects: "Projeleri Görüntüle →",
             contactMe: "İletişime Geç"
         },
@@ -26,8 +26,8 @@ const translations = {
             role: "Rol",
             location: "Konum",
             locationValue: "Türkiye",
-            roleValue: "Java & Android Developer",
-            paragraph1: "Yazılım geliştirmeye olan tutkumla, modern teknolojileri kullanarak kullanıcı dostu ve verimli uygulamalar oluşturuyorum. Android ve Java teknolojilerinde deneyim sahibiyim.",
+            roleValue: "Java Full Stack Developer",
+            paragraph1: "Yazılım geliştirmeye olan tutkumla, modern teknolojileri kullanarak kullanıcı dostu ve verimli uygulamalar oluşturuyorum. Modern web ve Java teknolojilerinde deneyim sahibiyim.",
             paragraph2: "Gerçek projelerde edindiğim tecrübelerle, karmaşık problemlere basit ve etkili çözümler sunuyorum. Her projede kullanıcı deneyimini ön planda tutarak, performans ve kalite odaklı çalışıyorum.",
             paragraph3: "Temiz kod yazma prensipleri ve en iyi uygulamaları benimseyerek, sürdürülebilir ve ölçeklenebilir yazılımlar geliştirmeyi hedefliyorum.",
             yearsExp: "Makale",
@@ -39,9 +39,14 @@ const translations = {
             label: "// YETENEKLERİM",
             title: "Teknoloji Yığını",
             subtitle: "Modern teknolojiler ve araçlarla çalışıyorum",
-            android: { title: "Android SDK", tag: "Mobile" },
-            compose: { title: "Jetpack Compose", tag: "UI Toolkit" },
-            firebase: { title: "Firebase", tag: "Cloud" },
+            springcloud: { title: "Spring Cloud", tag: "Cloud" },
+            keycloak: { title: "Keycloak", tag: "Security" },
+            rabbitmq: { title: "RabbitMQ", tag: "Message Broker" },
+            kafka: { title: "Kafka", tag: "Message Broker" },
+            grafana: { title: "Grafana", tag: "Monitoring" },
+            microservices: { title: "Microservices", tag: "Architecture" },
+            junit: { title: "JUnit", tag: "Testing" },
+            angular: { title: "Angular", tag: "Frontend" },
             springboot: { title: "Spring Boot", tag: "Backend" },
             security: { title: "Spring Security", tag: "Security" },
             jpa: { title: "Spring Data JPA", tag: "ORM" },
@@ -87,6 +92,14 @@ const translations = {
             project7: {
                 title: "EventHubRestAPI",
                 desc: "JWT, OAuth2 (GitHub, Google) ve refresh token içeren kapsamlı Etkinlik Yönetimi REST API'si. Tam CRUD işlemleri."
+            },
+            project8: {
+                title: "LogiMeshMicroservices",
+                desc: "Spring Boot ile geliştirilen event-driven mikroservis lojistik platformu. Rest/Feign, Kafka, API Gateway, Eureka, Keycloak ve tam gözlemlenebilirlik (Grafana, Loki, Tempo) ile Docker Compose üzerinden çalışır."
+            },
+            project9: {
+                title: "bankappmicroservices",
+                desc: "Hesaplar, krediler ve kartları yöneten modern bankacılık mikroservisleri. Merkezi yapılandırma, Keycloak ile JWT doğrulaması ve Resilience4j içerir. OpenTelemetry ile tam izlenebilirlik ve Docker Compose ile kapsayıcı mimarisi sunar."
             }
         },
         // Articles Section
@@ -162,8 +175,8 @@ const translations = {
         hero: {
             greeting: "Hello, I am",
             name: "Bekir Ahmetli",
-            role: "Android & Java Developer",
-            description: "I develop scalable applications with Android and backend technologies.",
+            role: "Java Full Stack Developer",
+            description: "I develop scalable full stack applications with modern web and backend technologies.",
             viewProjects: "View Projects →",
             contactMe: "Contact Me"
         },
@@ -175,8 +188,8 @@ const translations = {
             role: "Role",
             location: "Location",
             locationValue: "Turkey",
-            roleValue: "Java & Android Developer",
-            paragraph1: "With my passion for software development, I create user-friendly and efficient applications using modern technologies. I have experience in Android and Java technologies.",
+            roleValue: "Java Full Stack Developer",
+            paragraph1: "With my passion for software development, I create user-friendly and efficient applications using modern technologies. I have experience in modern web and Java technologies.",
             paragraph2: "With the experience I gained in real projects, I offer simple and effective solutions to complex problems. I work with a focus on performance and quality, prioritizing user experience in every project.",
             paragraph3: "By adopting clean code principles and best practices, I aim to develop sustainable and scalable software.",
             yearsExp: "Articles",
@@ -188,9 +201,14 @@ const translations = {
             label: "// MY SKILLS",
             title: "Technology Stack",
             subtitle: "Working with modern technologies and tools",
-            android: { title: "Android SDK", tag: "Mobile" },
-            compose: { title: "Jetpack Compose", tag: "UI Toolkit" },
-            firebase: { title: "Firebase", tag: "Cloud" },
+            springcloud: { title: "Spring Cloud", tag: "Cloud" },
+            keycloak: { title: "Keycloak", tag: "Security" },
+            rabbitmq: { title: "RabbitMQ", tag: "Message Broker" },
+            kafka: { title: "Kafka", tag: "Message Broker" },
+            grafana: { title: "Grafana", tag: "Monitoring" },
+            microservices: { title: "Microservices", tag: "Architecture" },
+            junit: { title: "JUnit", tag: "Testing" },
+            angular: { title: "Angular", tag: "Frontend" },
             springboot: { title: "Spring Boot", tag: "Backend" },
             security: { title: "Spring Security", tag: "Security" },
             jpa: { title: "Spring Data JPA", tag: "ORM" },
@@ -236,6 +254,14 @@ const translations = {
             project7: {
                 title: "EventHubRestAPI",
                 desc: "Comprehensive Event Management REST API with JWT, OAuth2 (GitHub, Google), refresh token, and full CRUD operations."
+            },
+            project8: {
+                title: "LogiMeshMicroservices",
+                desc: "An event-driven microservices logistics platform built with Spring Boot. Features sync (REST/Feign) and async (Kafka) communication, API Gateway, Eureka discovery, Keycloak security, and comprehensive observability (Grafana, Loki, Tempo) deployed via Docker Compose."
+            },
+            project9: {
+                title: "bankappmicroservices",
+                desc: "Modern banking microservices handling accounts, loans, and cards. Implements centralized config, JWT auth via Keycloak, and resilience patterns (Resilience4j). Includes comprehensive OpenTelemetry tracing and monitoring, fully containerized with Docker Compose."
             }
         },
         // Articles Section

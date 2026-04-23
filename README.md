@@ -1,6 +1,6 @@
 # Bekir Ahmetli Portfolio
 
-Welcome to the personal portfolio website of **Bekir Ahmetli**. This project showcases my skills, projects, and articles as an Android & Java Developer.
+Welcome to the personal portfolio website of **Bekir Ahmetli**. This project showcases my skills, projects, and articles as a Java Full Stack Developer.
 
 ## 🌟 Features
 
